@@ -16,9 +16,10 @@ app.include_router(router)
 
 
 origins = (
-    'http://0.0.0.0:8080',
-    'http://localhost:8080',
+    'http://localhost:8000',
+    'http://localhost:3000',
 )
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
